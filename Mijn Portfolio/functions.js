@@ -1,10 +1,3 @@
-// nav active
-
-$('.nav li a').on('click', function() {
-    $(this).parent().parent().find('.active').removeClass('active');
-    $(this).parent().addClass('active').css('font-weight', 'bold');
-});
-
 // Smooth nav Scrolling
 
     $(document).ready(function(){
