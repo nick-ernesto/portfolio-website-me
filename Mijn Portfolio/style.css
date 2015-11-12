@@ -47,6 +47,33 @@ pre {
 	line-height: 18.5667px;
 }
 
+@media (max-width: 720px){
+    h1 {
+        font-size: 18px;
+    }
+    p {
+    	font-size: 12px;
+    }
+}
+
+@media (max-width: 640px){
+    h1 {
+        font-size: 16px;
+    }
+    p {
+    	font-size: 10px;
+    }
+}
+
+@media (max-width: 320px){
+    h1 {
+        font-size: 12px;
+    }
+    p {
+    	font-size: 8px;
+    }
+}
+
 /* misc */
 
 nav {
@@ -146,6 +173,7 @@ border-bottom: 5px solid #4D94FF;
 .sections {
 	width: 100%;
 	height: 100vh;
+	min-height: 500px;
 	z-index: 2;
 }
 
@@ -209,9 +237,6 @@ margin-top: 300px;
 #box2 {
     text-align: center;
     padding-top: 150px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 0px;
 }
 
 #box2 h1 {
@@ -306,6 +331,7 @@ margin: none;
 .fullpagecar {
 	width: 100%;
 	height: 100vh;
+	min-height: 500px;
 }
 
 .borderaway {
@@ -330,8 +356,8 @@ margin: none;
 }
 
 .carousel .item {
-    min-height: 350px; 
     height: 100vh;
+    min-height: 500px;
     width:100%; 
 }
 .carousel .icon-container,
