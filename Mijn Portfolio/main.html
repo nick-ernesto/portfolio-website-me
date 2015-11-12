@@ -8,6 +8,7 @@
 	<title>Portfolio Nick Jacobs</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="animate.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -48,8 +49,8 @@
 
 <div  class="jumbotron sections">
 	<div id="box1" class="container">
-	<h1>Nick Jacobs</h1>
-	<p>webdevelopment & music production</p>
+	<h1 class="animated fadeInDownBig">Nick Jacobs</h1>
+	<p class="animated fadeInUp">webdevelopment & music production</p>
 	<div id="cons"<span class="glyphicon glyphicon-menu-down"></span></div>
 	</div>
 </div>
@@ -69,32 +70,78 @@
 <section id="three" class="sections navsnap">
 
 	<div id="box3" class="container">
-		<div class="row paddingclass">
-			<div class="col-md-6">
-				<h2><a href="https://play.google.com/store/apps/details?id=com.nfcbots&hl=en">NFC-Bots</a></h2>
-				<p>NFC-Bots is a multiplayer turn-based rpg. You can write and read NFC chips using the built-in NFC scanner on your Android device, and trade parts with your friends.</p>
+		<div id="carousel-example-generic" class="carousel slide fullpagecar" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active">
+    </li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+    <!-- First slide -->
+    <div class="item active borderaway">
+      <div class="carousel-caption carouselinside">
+      	<div class="col-md-6">
+				<img src="IMG/nfcbots.png" class="img-circle img-responsive imageclass" width="200" height="200" data-animation="animated zoomInUp"/>
 			</div>
-			<div class="col-md-6">
-				<img src="IMG/nfcbots.png" class="img-circle img-responsive imageclass" width="200" height="200"/>
+		<div>
+        <h1 data-animation="animated bounceInLeft">
+          NFC-Bots
+        </h1>
+        <p data-animation="animated bounceInRight">
+          NFC-Bots is a multiplayer turn-based rpg. You can write and read NFC chips using the built-in NFC scanner on your Android device, and trade parts with your friends.
+        </p>
+        <button class="btn btn-primary btn-lg carouselbtn"
+                data-animation="animated zoomInRight"><a href="https://play.google.com/store/apps/details?id=com.nfcbots&hl=en">Download now</a></button>
+                </div>
+      </div>
+    </div><!-- /.item -->
+
+    <!-- Second slide -->
+    <div class="item borderaway">
+      <div class="carousel-caption carouselinside">
+      	<div class="col-md-6">
+				<img src="IMG/reffieios.jpg" class="img-circle img-responsive imageclass" width="200" height="200" data-animation="animated zoomInUp"/>
 			</div>
-		</div>
-		<hr />
-		<div class="row paddingclass">
-			<div class="col-md-6">
-				<img src="IMG/reffieios.jpg" class="img-circle img-responsive imageclass" width="200" height="200"/>
-			</div>
-			<div class="col-md-6">
-				<h2>Reffey</h2>
-				<p>With reffey for IOS your can make your own polls anonymously and let the people in your own area answer them. If it's a personal or maybe a political question, it's all up to you. You can even post post your polls on facebook!</p>
-			</div>
-		</div>
+      <div class="col-md-6">
+        <h1 data-animation="animated bounceInDown">
+          Reffey
+        </h1>
+        <p data-animation="animated bounceInUp">
+          With reffey for IOS your can make your own polls anonymously and let the people in your own area answer them. If it's a personal or maybe a political question, it's all up to you. You can even post post your polls on facebook!
+        </p>
+        <button class="btn btn-primary btn-lg carouselbtn"
+                data-animation="animated zoomInRight">Download now</button>
+            </div>
+      </div>
+    </div><!-- /.item -->
+
+  </div><!-- /.carousel-inner -->
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic"
+     role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic"
+     role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div><!-- /.carousel -->
 	</div>
 
 </section>
 
 <section id="four" class="sections navsnap">
 
-<div id="box3" class="container">
+<div id="box4" class="container">
 	<h1 class="headerclass">contact</h1>
 	<form role="form" class="formclass">
 		<div class="form-group">
@@ -114,16 +161,6 @@
 </div>
 
 </section>
-
-<!-- <footer>
-<div class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container">
-      <p class="navbar-text pull-left">© Nick Jacobs 2015
-          
-      </p>
-    </div>
-</div>
-</footer> -->
 
 
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
