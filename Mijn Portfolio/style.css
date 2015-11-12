@@ -8,7 +8,7 @@ body{
 
 h1 {
 	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-size: 24px;
+	font-size: 40px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
@@ -209,6 +209,9 @@ margin-top: 300px;
 #box2 {
     text-align: center;
     padding-top: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 0px;
 }
 
 #box2 h1 {
@@ -261,14 +264,6 @@ margin-top: 300px;
 
 /* contact page */
 
-.contactbox {
-	width: 100px;
-	height: 300px;
-	background-color: red;
-	top: 250px;
-	left: 100px;
-}
-
 .formclass {
 	margin-top: 150px;
 }
@@ -289,7 +284,17 @@ margin-top: 300px;
 	border-color: #4D94FF;
 }
 
+#box4 {
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
 /* carousel */
+
+#box3 {
+padding: none;
+margin: none;
+}
 
 .carouselbtn {
 	width: 150px;
@@ -323,6 +328,7 @@ margin-top: 300px;
 .carousel-control.left {
     background-image: none;
 }
+
 .carousel .item {
     min-height: 350px; 
     height: 100vh;
@@ -351,6 +357,10 @@ margin-top: 300px;
 .carousel-caption button {
     border-color: #4D94FF;
     margin-top: 1em; 
+}
+
+.carousel-caption button:focus {
+    outline: 0 !important;
 }
 
 .carousel-caption h1:first-child {
