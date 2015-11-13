@@ -8,7 +8,7 @@ body{
 
 h1 {
 	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-size: 40px;
+	font-size: 60px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
@@ -24,10 +24,10 @@ h3 {
 }
 p {
 	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-size: 14px;
+	font-size: 17px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 400;
+	font-weight: 100;
 	line-height: 20px;
 }
 blockquote {
@@ -51,6 +51,7 @@ pre {
     h1 {
         font-size: 18px;
     }
+    #myname { font-size: 50px; }
     p {
     	font-size: 12px;
     }
@@ -60,6 +61,7 @@ pre {
     h1 {
         font-size: 16px;
     }
+    #myname { font-size: 40px; }
     p {
     	font-size: 10px;
     }
@@ -69,15 +71,27 @@ pre {
     h1 {
         font-size: 12px;
     }
+    #myname { font-size: 30px; }
     p {
     	font-size: 8px;
     }
 }
 
-@media (max-height: 720px){
+@media (max-height: 650px){
+    h1 {
+        font-size: 25px;
+    }
+    #myname { font-size: 50px; }
+    p {
+    	font-size: 12px;
+    }
+}
+
+@media (max-height: 560px){
     h1 {
         font-size: 18px;
     }
+    #myname { font-size: 50px; }
     p {
     	font-size: 12px;
     }
@@ -142,6 +156,7 @@ color: #4D94FF;
 
 .navbar .nav > li > a:hover {
 background-color: transparent;
+color: #D9D9D9;
 
 }
 
@@ -155,7 +170,7 @@ border-bottom: 5px solid #4D94FF;
 @media (max-width: 767px) {
     .navbar-transparent {
         background: white !important;
-        opacity: 0.8;
+        opacity: 0.7;
         -webkit-box-shadow: 1px 3px 10px 1px rgba(0,0,0,0.22);
 		-moz-box-shadow: 1px 3px 10px 1px rgba(0,0,0,0.22);
 		box-shadow: 1px 3px 10px 1px rgba(0,0,0,0.22);
@@ -165,6 +180,9 @@ border-bottom: 5px solid #4D94FF;
     }
     .icon-bar {
     	background:black;
+    }
+    .active{
+    	border-bottom: 2px dotted #4D94FF;
     }
 }
 
@@ -232,7 +250,7 @@ border-bottom: 5px solid #4D94FF;
 #cons {
 	color: white;
 	position: relative;
-margin-top: 300px;
+	padding-top: 180px;
 }
 
 /* section 2 */
@@ -303,7 +321,7 @@ margin-top: 300px;
 	text-align: center;
 }
 
-.btn {
+.btn-primary {
 	width: 150px;
 	border-radius: 30px;
 	background-color: #4D94FF;
@@ -313,6 +331,13 @@ margin-top: 300px;
 #box4 {
 	padding-left: 120px;
 	padding-right: 120px;
+}
+
+@media (max-width: 500px){
+    #box4 {
+    	padding-left: 30px;
+    	padding-right: 30px;
+    }
 }
 
 /* carousel */
@@ -350,6 +375,12 @@ margin: none;
 
 .carousel-indicators {
     bottom: 0;
+}
+
+@media (max-width: 500px){
+    .carousel-indicators{
+    	top: 0px;
+    }
 }
 .carousel-control.right,
 .carousel-control.left {
@@ -396,4 +427,25 @@ margin: none;
 
 .carousel-caption button {
     animation-delay: 1s;
+}
+
+/* Footer */
+
+.navbar-fixed-bottom {
+	position: relative;
+}
+
+#footerstuffs {
+	font-size: 20px;
+}
+
+.footers {
+	margin-top: 10px !important;
+}
+
+.icoon {
+	float: right;
+	margin: 10px;
+	font-size: 40px;
+	color: #4D94FF;
 }
