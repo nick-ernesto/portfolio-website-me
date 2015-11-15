@@ -21,6 +21,7 @@
       });
     });
 
+
 //navbar collapse
 
 $(document).ready(function () {
@@ -107,3 +108,11 @@ $(document).ready(function(){
     });  
     
 })(jQuery);
+
+//stellar.js
+
+$(document).ready(function(){
+
+  $(window).stellar();
+
+});

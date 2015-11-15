@@ -27,7 +27,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="IMG/logo.png"></a>
+      <!-- <a class="navbar-brand" href="#"><img src="IMG/logo.png"></a> -->
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,9 +49,9 @@
 
 <section id="one" class="sections navsnap">
 
-<div  class="jumbotron sections">
+<div  class="jumbotron sections container-fluid image" data-stellar-background-ratio = "0.2">
 	<div id="box1" class="container">
-	<h1 id="myname" class="animated zoomInDown">Nick Jacobs</h1>
+	<h1 id="myname" class="animated zoomInDown"><div class="container">Nick</div> <div class="container">Jacobs</div></h1>
 	<p class="animated fadeInUpBig">webdevelopment & music production</p>
 	<div id="cons"<span class="glyphicon glyphicon-menu-down"></span></div>
 	</div>
@@ -69,7 +69,7 @@
 	</div>
 </section>
 
-<section id="three" class="sections navsnap">
+<section id="three" class="sections navsnap container-fluid image" data-stellar-background-ratio = "0.2">
 
 	<div id="box3" class="container">
 		<div id="carousel-example-generic" class="carousel slide fullpagecar" data-ride="carousel">
@@ -87,14 +87,14 @@
     <!-- First slide -->
     <div class="item active borderaway">
       <div class="carousel-caption carouselinside">
-      	<div class="col-md-6">
+      	<div class="col-md-6 carouselimg">
 				<img src="IMG/nfcbots.png" class="img-circle img-responsive imageclass" width="200" height="200" data-animation="animated zoomInUp"/>
 			</div>
-		<div>
+		<div class="col-md-6">
         <h1 data-animation="animated bounceInLeft">
           NFC-Bots
         </h1>
-        <p data-animation="animated bounceInRight">
+        <p data-animation="animated bounceInRight" >
           NFC-Bots is a multiplayer turn-based rpg. You can write and read NFC chips using the built-in NFC scanner on your Android device, and trade parts with your friends.
         </p>
         <button class="btn btn-primary btn-lg carouselbtn"
@@ -106,7 +106,7 @@
     <!-- Second slide -->
     <div class="item borderaway">
       <div class="carousel-caption carouselinside">
-      	<div class="col-md-6">
+      	<div class="col-md-6 carouselimg">
 				<img src="IMG/reffieios.jpg" class="img-circle img-responsive imageclass" width="200" height="200" data-animation="animated zoomInUp"/>
 			</div>
       <div class="col-md-6">
@@ -114,7 +114,7 @@
           Reffey
         </h1>
         <p data-animation="animated bounceInUp">
-          With reffey for IOS your can make your own polls anonymously and let the people in your own area answer them. If it's a personal or maybe a political question, it's all up to you. You can even post post your polls on facebook!
+          With reffey for IOS your can make your own polls anonymously and let the people in your own area answer them. If it's a personal or maybe a political question, it's all up to you. You can even post your polls on facebook!
         </p>
         <button class="btn btn-primary btn-lg carouselbtn"
                 data-animation="animated zoomInRight">Download now</button>
@@ -187,6 +187,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="stellar.js-master/jquery.stellar.min.js"></script>
 	<script type="text/javascript" src="functions.js"></script>
 </body>
 </html>

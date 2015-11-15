@@ -1,21 +1,32 @@
 body{
 	margin: 0px;
 	padding: 0px;
-	text-decoration: sans-serif;
+	text-decoration: ostrich-sans;
 }
 
 /* Text Styles */
 
+@font-face {
+   font-family: ostrich-sans; 
+   src: url('ostrich-sans/OstrichSansRounded-Medium.otf');
+} 
+
+@font-face {
+   font-family: ostrich-sansblack; 
+   src: url('ostrich-sans/OstrichSans-Black.otf');
+} 
+
+
 h1 {
-	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-size: 60px;
+	font-family: ostrich-sansblack;
+	font-size: 55px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
 	line-height: 26.4px;
 }
 h3 {
-	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-family: ostrich-sansblack;
 	font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
@@ -23,15 +34,15 @@ h3 {
 	line-height: 15.4px;
 }
 p {
-	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-size: 17px;
+	font-family: ostrich-sans;
+	font-size: 22px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 100;
 	line-height: 20px;
 }
 blockquote {
-	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-family: ostrich-sans;
 	font-size: 21px;
 	font-style: normal;
 	font-variant: normal;
@@ -39,7 +50,7 @@ blockquote {
 	line-height: 30px;
 }
 pre {
-	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-family: ostrich-sans;
 	font-size: 13px;
 	font-style: normal;
 	font-variant: normal;
@@ -49,7 +60,7 @@ pre {
 
 @media (max-width: 720px){
     h1 {
-        font-size: 18px;
+        font-size: 20px;
     }
     #myname { font-size: 50px; }
     p {
@@ -59,7 +70,7 @@ pre {
 
 @media (max-width: 640px){
     h1 {
-        font-size: 16px;
+        font-size: 20px;
     }
     #myname { font-size: 40px; }
     p {
@@ -69,31 +80,31 @@ pre {
 
 @media (max-width: 320px){
     h1 {
-        font-size: 12px;
+        font-size: 20px;
     }
-    #myname { font-size: 30px; }
+    #myname { font-size: 40px; }
     p {
-    	font-size: 8px;
+    	font-size: 10px;
     }
 }
 
 @media (max-height: 650px){
     h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
     #myname { font-size: 50px; }
     p {
-    	font-size: 12px;
+    	font-size: 10px;
     }
 }
 
 @media (max-height: 560px){
     h1 {
-        font-size: 18px;
+        font-size: 20px;
     }
     #myname { font-size: 50px; }
     p {
-    	font-size: 12px;
+    	font-size: 10px;
     }
 }
 
@@ -148,7 +159,9 @@ color: #4D94FF;
 }
 
 .navbar .nav > li > a {
-	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+outline: 0;
+font-family: ostrich-sans;
+font-size: 20px;
 background-color: transparent;
 color: #4D94FF;
 
@@ -163,23 +176,35 @@ color: #D9D9D9;
 .active {
 outline: 0;
 color: #4D94FF;
-border-bottom: 5px solid #4D94FF;
+border-bottom: 3px solid #4D94FF;
 }
 
+@media (max-width: 767px){
+	.navbar .nav > li > a {
+		border-bottom: none;
+	}
+}
 
 @media (max-width: 767px) {
     .navbar-transparent {
-        background: white !important;
-        opacity: 0.7;
+    	/* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    
         -webkit-box-shadow: 1px 3px 10px 1px rgba(0,0,0,0.22);
 		-moz-box-shadow: 1px 3px 10px 1px rgba(0,0,0,0.22);
 		box-shadow: 1px 3px 10px 1px rgba(0,0,0,0.22);
     }
     .navbar-transparent div div button {
-    	background: white !important;
+    	background: transparent !important;
     }
     .icon-bar {
-    	background:black;
+    	background:#4D94FF;
     }
     .active{
     	border-bottom: 2px dotted #4D94FF;
@@ -200,7 +225,7 @@ border-bottom: 5px solid #4D94FF;
 .sections {
 	width: 100%;
 	height: 100vh;
-	min-height: 550px;
+	min-height: 650px;
 	z-index: 2;
 }
 
@@ -213,7 +238,7 @@ border-bottom: 5px solid #4D94FF;
 }
 
 #three {
-	background-image: url(IMG/newyork.jpg);
+	background-image: url(IMG/bergendier.jpeg);
 	background-size: cover;
 	background-attachment: fixed;
 	-webkit-box-shadow: inset 0px -2px 10px 1px rgba(0,0,0,0.4);
@@ -229,7 +254,7 @@ border-bottom: 5px solid #4D94FF;
 /* Jumbotron */
 
 .jumbotron {
-	background-image: url(IMG/goodmorning.jpg);
+	background-image: url(IMG/bergen.jpeg);
 	background-size: cover;
 	background-attachment: fixed;
 	-webkit-box-shadow: inset 0px -2px 10px 1px rgba(0,0,0,0.4);
@@ -240,7 +265,7 @@ border-bottom: 5px solid #4D94FF;
 
 #box1 {
     text-align: center;
-    padding-top: 150px;
+    padding-top: 75px;
 }
 
 #box1 p {
@@ -249,9 +274,17 @@ border-bottom: 5px solid #4D94FF;
 
 #cons {
 	color: white;
-	position: relative;
-	padding-top: 180px;
+	position: absolute;
+	margin-top: 90vh;
 }
+
+
+@media (max-height: 650px){
+	#cons {
+
+	}
+}
+
 
 /* section 2 */
 
@@ -296,7 +329,7 @@ border-bottom: 5px solid #4D94FF;
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid white;
+    border: 3px solid #545151;
 }
 
 @media (max-width: 1000px) {
@@ -313,7 +346,7 @@ border-bottom: 5px solid #4D94FF;
 }
 
 .form-group {
-	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-family: ostrich-sans;
 }
 
 .headerclass {
@@ -322,6 +355,7 @@ border-bottom: 5px solid #4D94FF;
 }
 
 .btn-primary {
+	font-family: ostrich-sansblack;
 	width: 150px;
 	border-radius: 30px;
 	background-color: #4D94FF;
@@ -357,7 +391,7 @@ margin: none;
 .fullpagecar {
 	width: 100%;
 	height: 100vh;
-	min-height: 550px;
+	min-height: 650px;
 }
 
 .borderaway {
@@ -365,8 +399,8 @@ margin: none;
 }
 
 .carouselinside {
-	top: 30%;
-	bottom: 70%
+	top: 30vh;
+	bottom: 70vh;
 }
 
 .main-container {
@@ -374,7 +408,7 @@ margin: none;
 }
 
 .carousel-indicators {
-    bottom: 0;
+    bottom: 100px;
 }
 
 @media (max-width: 500px){
@@ -389,16 +423,18 @@ margin: none;
 
 .carousel .item {
     height: 100vh;
-    min-height: 550px;
+    min-height: 650px;
     width:100%; 
 }
 .carousel .icon-container,
 .carousel-caption button {
+	font-family:ostrich-sansblack;
     background-color: #4D94FF;
     border-color: #4D94FF;
 }
 
 .carouselbtn a {
+	font-family:ostrich-sansblack;
 	color: white;
 }
 .carousel-caption h1 {
@@ -429,23 +465,58 @@ margin: none;
     animation-delay: 1s;
 }
 
+.carousimage {
+	position: relative;
+	margin-top: 1px;
+}
+
+.carouselimg {
+	padding-top: 10%;
+}
+
 /* Footer */
 
 .navbar-fixed-bottom {
-	position: relative;
+	position: fixed;
+	 	/* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	border-top: none;
+	-webkit-box-shadow: 1px 1px 15px 1px rgba(0,0,0,0.66);
+-moz-box-shadow: 1px 1px 15px 1px rgba(0,0,0,0.66);
+box-shadow: 1px 1px 15px 1px rgba(0,0,0,0.66);
 }
 
 #footerstuffs {
-	font-size: 20px;
+	position: absolute;
+	color: #4D94FF;
+	font-size: 15px;
 }
 
 .footers {
-	margin-top: 10px !important;
+	margin-top: 5px !important;
 }
 
 .icoon {
 	float: right;
-	margin: 10px;
-	font-size: 40px;
+	margin: 5px;
+	font-size: 30px;
 	color: #4D94FF;
+}
+
+@media (max-width: 500px){
+    .icoon {
+    	font-size: 30px;
+    }
+    #footerstuffs {
+    	font-size: 15px;
+    }
+    .navbar-fixed-bottom {
+    	position: relative;
+    }
 }
