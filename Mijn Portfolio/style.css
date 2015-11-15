@@ -16,9 +16,13 @@ body{
    src: url('ostrich-sans/OstrichSans-Black.otf');
 } 
 
+@font-face {
+   font-family: amatic; 
+   src: url('amatic/Amatic-Bold.ttf');
+} 
 
 h1 {
-	font-family: ostrich-sansblack;
+	font-family: amatic;
 	font-size: 55px;
 	font-style: normal;
 	font-variant: normal;
@@ -34,6 +38,15 @@ h3 {
 	line-height: 15.4px;
 }
 p {
+	font-family: ostrich-sans;
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 20px;
+}
+
+label {
 	font-family: ostrich-sans;
 	font-size: 22px;
 	font-style: normal;
@@ -64,7 +77,7 @@ pre {
     }
     #myname { font-size: 50px; }
     p {
-    	font-size: 12px;
+    	font-size: 18px;
     }
 }
 
@@ -74,7 +87,7 @@ pre {
     }
     #myname { font-size: 40px; }
     p {
-    	font-size: 10px;
+    	font-size: 16px;
     }
 }
 
@@ -84,7 +97,7 @@ pre {
     }
     #myname { font-size: 40px; }
     p {
-    	font-size: 10px;
+    	font-size: 14px;
     }
 }
 
@@ -94,7 +107,7 @@ pre {
     }
     #myname { font-size: 50px; }
     p {
-    	font-size: 10px;
+    	font-size: 18px;
     }
 }
 
@@ -104,7 +117,7 @@ pre {
     }
     #myname { font-size: 50px; }
     p {
-    	font-size: 10px;
+    	font-size: 14px;
     }
 }
 
@@ -169,7 +182,7 @@ color: #4D94FF;
 
 .navbar .nav > li > a:hover {
 background-color: transparent;
-color: #D9D9D9;
+color: #545151;
 
 }
 
@@ -190,7 +203,7 @@ border-bottom: 3px solid #4D94FF;
     	/* Fallback for web browsers that don't support RGBa */
     background-color: rgb(0, 0, 0);
     /* RGBa with 0.6 opacity */
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     /* For IE 5.5 - 7*/
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
     /* For IE 8*/
@@ -225,7 +238,7 @@ border-bottom: 3px solid #4D94FF;
 .sections {
 	width: 100%;
 	height: 100vh;
-	min-height: 650px;
+	min-height: 640px;
 	z-index: 2;
 }
 
@@ -238,9 +251,13 @@ border-bottom: 3px solid #4D94FF;
 }
 
 #three {
-	background-image: url(IMG/bergendier.jpeg);
-	background-size: cover;
-	background-attachment: fixed;
+	background-image: url(IMG/bergendier.jpg);
+	
+	-webkit-background-size: 100% 100vh;
+ -moz-background-size: 100% 100vh;
+ -o-background-size: 100% 100vh;
+ background-size: 100% 100vh;
+	background-attachment: fixed !important;
 	-webkit-box-shadow: inset 0px -2px 10px 1px rgba(0,0,0,0.4);
 	-moz-box-shadow: inset 0px -2px 10px 1px rgba(0,0,0,0.4);
 	box-shadow: inset 0px -2px 10px 1px rgba(0,0,0,0.4);
@@ -251,15 +268,25 @@ border-bottom: 3px solid #4D94FF;
 	background-color: white;
 }
 
+@media only screen and (max-device-width: 480px) {
+	#three { background-image: none !important; background-color: #545151 !important; }
+	.jumbotron { background-image: none !important; background-color: #545151 !important; }
+}
+
 /* Jumbotron */
 
 .jumbotron {
-	background-image: url(IMG/bergen.jpeg);
-	background-size: cover;
-	background-attachment: fixed;
+	background-image: url(IMG/bergen.jpg);
+	
+	-webkit-background-size: 100% 100vh;
+ -moz-background-size: 100% 100vh;
+ -o-background-size: 100% 100vh;
+ background-size: 100% 100vh;
+	background-attachment: fixed !important;
 	-webkit-box-shadow: inset 0px -2px 10px 1px rgba(0,0,0,0.4);
 	-moz-box-shadow: inset 0px -2px 10px 1px rgba(0,0,0,0.4);
 	box-shadow: inset 0px -2px 10px 1px rgba(0,0,0,0.4);
+	background-color: #D9D9D9;
 
 }
 
@@ -330,6 +357,7 @@ border-bottom: 3px solid #4D94FF;
     margin-left: auto;
     margin-right: auto;
     border: 3px solid #545151;
+    opacity: 0.7;
 }
 
 @media (max-width: 1000px) {
@@ -342,7 +370,7 @@ border-bottom: 3px solid #4D94FF;
 /* contact page */
 
 .formclass {
-	margin-top: 150px;
+	margin-top: 50px;
 }
 
 .form-group {
@@ -388,10 +416,15 @@ margin: none;
 	border-color: #4D94FF;
 }
 
+.carouselbtn:hover {
+	background-color: #545151;
+	border-color: #545151;
+}
+
 .fullpagecar {
 	width: 100%;
 	height: 100vh;
-	min-height: 650px;
+	min-height: 640px;
 }
 
 .borderaway {
@@ -423,7 +456,7 @@ margin: none;
 
 .carousel .item {
     height: 100vh;
-    min-height: 650px;
+    min-height: 640px;
     width:100%; 
 }
 .carousel .icon-container,
@@ -481,7 +514,7 @@ margin: none;
 	 	/* Fallback for web browsers that don't support RGBa */
     background-color: rgb(0, 0, 0);
     /* RGBa with 0.6 opacity */
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     /* For IE 5.5 - 7*/
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
     /* For IE 8*/
@@ -504,9 +537,18 @@ box-shadow: 1px 1px 15px 1px rgba(0,0,0,0.66);
 
 .icoon {
 	float: right;
-	margin: 5px;
+	margin: 4px;
+	margin-right: 10px;
 	font-size: 30px;
 	color: #4D94FF;
+}
+
+.icoon:hover {
+	color: #545151;
+}
+
+#copyglyph {
+	margin-right: 8px;
 }
 
 @media (max-width: 500px){

@@ -116,3 +116,16 @@ $(document).ready(function(){
   $(window).stellar();
 
 });
+
+// Fittext
+
+jQuery("#fittext1").fitText(1.1, { minFontSize: '40px', maxFontSize: '150px' });
+
+// backstretch
+
+// $("#three").backstretch("IMG/bergendier.jpg");
+
+// $(".jumbotron").backstretch("IMG/bergen.jpg");
+
+// remove stellar by width
+
