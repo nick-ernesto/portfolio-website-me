@@ -1,19 +1,19 @@
 body{
 	margin: 0px;
 	padding: 0px;
-	text-decoration: source-sans;
-}ostrich
+	text-decoration: quicksand;
+}
 
 /* Text Styles */
 
 @font-face {
-   font-family: source-sans; 
-   src: url('source-sans-pro/SourceSansPro-Regular.otf');
+   font-family: quicksand; 
+   src: url('quicksand/Quicksand-Regular.otf');
 } 
 
 @font-face {
-   font-family: source-sansblack; 
-   src: url('source-sans-pro/SourceSansPro-Semibold.otf');
+   font-family: quicksandblack; 
+   src: url('quicksand/Quicksand-Bold.otf');
 } 
 
 @font-face {
@@ -30,7 +30,7 @@ h1 {
 	line-height: 26.4px;
 }
 h3 {
-	font-family: source-sansblack;
+	font-family: quicksandblack;
 	font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
@@ -38,7 +38,7 @@ h3 {
 	line-height: 15.4px;
 }
 p {
-	font-family: source-sans;
+	font-family: quicksand;
 	font-size: 22px;
 	font-style: normal;
 	font-variant: normal;
@@ -47,7 +47,7 @@ p {
 }
 
 label {
-	font-family: source-sans;
+	font-family: quicksand;
 	font-size: 22px;
 	font-style: normal;
 	font-variant: normal;
@@ -55,7 +55,7 @@ label {
 	line-height: 20px;
 }
 blockquote {
-	font-family: source-sans;
+	font-family: quicksand;
 	font-size: 21px;
 	font-style: normal;
 	font-variant: normal;
@@ -63,7 +63,7 @@ blockquote {
 	line-height: 30px;
 }
 pre {
-	font-family: source-sans;
+	font-family: quicksand;
 	font-size: 13px;
 	font-style: normal;
 	font-variant: normal;
@@ -173,7 +173,7 @@ color: #4D94FF;
 
 .navbar .nav > li > a {
 outline: 0;
-font-family: source-sans;
+font-family: quicksand;
 font-size: 20px;
 background-color: transparent;
 color: #4D94FF;
@@ -374,7 +374,7 @@ border-bottom: 3px solid #4D94FF;
 }
 
 .form-group {
-	font-family: source-sans;
+	font-family: quicksand;
 }
 
 .headerclass {
@@ -383,7 +383,7 @@ border-bottom: 3px solid #4D94FF;
 }
 
 .btn-primary {
-	font-family: source-sansblack;
+	font-family: quicksandblack;
 	width: 150px;
 	border-radius: 30px;
 	background-color: #4D94FF;
@@ -461,13 +461,13 @@ margin: none;
 }
 .carousel .icon-container,
 .carousel-caption button {
-	font-family:source-sansblack;
+	font-family:quicksandblack;
     background-color: #4D94FF;
     border-color: #4D94FF;
 }
 
 .carouselbtn a {
-	font-family:source-sansblack;
+	font-family:quicksandblack;
 	color: white;
 }
 .carousel-caption h1 {
